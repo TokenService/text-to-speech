@@ -4,6 +4,14 @@
 
 由 [New.bi](https://api.new.bi) 提供，专业、稳定、可靠的大模型聚合中转平台。
 
+## 交给 AI 安装
+
+把下面这句直接发给 agent，它会完成下载、解压、鉴权和执行：
+
+```text
+安装并使用 New.bi 语音技能：下载 https://pub-817cae131e2b4e0a8ce0a9f8bac75462.r2.dev/down/text-to-speech.zip，解压后运行 python3 scripts/gateway.py login --key <你的密钥>，再运行 doctor 确认，然后用 tts speak 合成语音、tts clone 克隆音色、transcribe 转写音频。
+```
+
 语音合成、音色克隆和转写的命令行工具，也可以直接当 agent 技能用。
 
 合成有三条通道，按模型名自动选：直接返回音频、异步任务、对话模型。克隆返回 voice id，不返回音频。
